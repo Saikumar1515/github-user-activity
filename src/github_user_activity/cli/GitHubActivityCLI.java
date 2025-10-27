@@ -5,7 +5,7 @@ import java.net.*;
 
 class GitHubActivityCLI {
 
-	private static final String GITHUB_API_URL = "https://api.github.com/saikumar1515/";
+	private static final String GITHUB_API_URL = "https://api.github.com/users/";
 
 	public static void main(String[] args) {
 		if (args.length == 0) {
