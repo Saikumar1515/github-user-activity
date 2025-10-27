@@ -3,9 +3,9 @@ package github_user_activity.cli;
 import java.io.*;
 import java.net.*;
 
-public class GitHubActivityCLI {
+class GitHubActivityCLI {
 
-	private static final String GITHUB_API_URL = "https://api.github.com/users/";
+	private static final String GITHUB_API_URL = "https://api.github.com/saikumar1515/";
 
 	public static void main(String[] args) {
 		if (args.length == 0) {
@@ -44,6 +44,7 @@ public class GitHubActivityCLI {
 				return;
 			}
 
+			
 			String[] events = json.split("\\},\\{");
 			for (String event : events) {
 				String type = extractValue(event, "\"type\":\"");
